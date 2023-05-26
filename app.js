@@ -1,11 +1,9 @@
-console.log("**** app.js *******");
+
 
 const dilInput = document.querySelector(".diller");
 const silBtn = document.getElementById("sil");
 const ekleBtn = document.getElementById("ekle");
-
 const dilSection = document.querySelector("#dil-section");
-
 const ul = document.createElement("ul");
 dilSection.appendChild(ul);
 
@@ -52,7 +50,7 @@ silBtn.onclick = function () {
 };
 
 dilInput.addEventListener("keydown", (e) => {
-  // console.log(e);
+  
   if (e.keyCode === 13) {
     ekleBtn.onclick();
   }
